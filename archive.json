@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2022-01-09T00:40:13.323697+00:00",
+  "timestamp": "2022-01-11T00:40:16.659863+00:00",
   "repo": "dimmyvi/secure-credential-transfer",
   "labels": [
     {
@@ -1934,7 +1934,7 @@
       "labels": [],
       "body": "This PR address some small comments from https://github.com/dimmyvi/secure-credential-transfer/pull/14 .",
       "createdAt": "2022-01-07T23:49:31Z",
-      "updatedAt": "2022-01-07T23:49:31Z",
+      "updatedAt": "2022-01-11T00:36:11Z",
       "baseRepository": "dimmyvi/secure-credential-transfer",
       "baseRefName": "main",
       "baseRefOid": "7124b291f9c6cd68b906b2a46181dad8b4e869d7",
@@ -1946,7 +1946,21 @@
       "mergedBy": null,
       "mergeCommit": null,
       "comments": [],
-      "reviews": []
+      "reviews": [
+        {
+          "id": "PRR_kwDOGL7YAs4ykvrw",
+          "commit": {
+            "abbreviatedOid": "b3cee54"
+          },
+          "author": "dimmyvi",
+          "authorAssociation": "OWNER",
+          "state": "APPROVED",
+          "body": "Looks good to me ",
+          "createdAt": "2022-01-11T00:36:11Z",
+          "updatedAt": "2022-01-11T00:36:11Z",
+          "comments": []
+        }
+      ]
     }
   ]
 }
