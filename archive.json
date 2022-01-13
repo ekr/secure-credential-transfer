@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2022-01-11T00:40:16.659863+00:00",
+  "timestamp": "2022-01-13T00:41:06.598747+00:00",
   "repo": "dimmyvi/secure-credential-transfer",
   "labels": [
     {
@@ -49,7 +49,24 @@
       "color": "ffffff"
     }
   ],
-  "issues": [],
+  "issues": [
+    {
+      "number": 17,
+      "id": "I_kwDOGL7YAs5BnYzC",
+      "title": "multidisciplinary?",
+      "url": "https://github.com/dimmyvi/secure-credential-transfer/issues/17",
+      "state": "OPEN",
+      "author": "jgscudder",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "The term \"multidisciplinary\" seems a little misplaced. My dictionary says it means \"combining or involving several academic disciplines or professional specializations in an approach to a topic or problem\", as in Computer Science and Anthropology for example. Not sure what is intended in the charter, but probably not that?",
+      "createdAt": "2022-01-12T22:20:18Z",
+      "updatedAt": "2022-01-12T22:20:18Z",
+      "closedAt": null,
+      "comments": []
+    }
+  ],
   "pulls": [
     {
       "number": 1,
@@ -1927,25 +1944,35 @@
       "id": "PR_kwDOGL7YAs4wroOM",
       "title": "Update Message Format Type And Example",
       "url": "https://github.com/dimmyvi/secure-credential-transfer/pull/16",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "alexpell00",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "This PR address some small comments from https://github.com/dimmyvi/secure-credential-transfer/pull/14 .",
       "createdAt": "2022-01-07T23:49:31Z",
-      "updatedAt": "2022-01-11T00:36:11Z",
+      "updatedAt": "2022-01-11T23:27:39Z",
       "baseRepository": "dimmyvi/secure-credential-transfer",
       "baseRefName": "main",
       "baseRefOid": "7124b291f9c6cd68b906b2a46181dad8b4e869d7",
       "headRepository": "dimmyvi/secure-credential-transfer",
       "headRefName": "apelletier/message-format-tweaks",
-      "headRefOid": "b3cee54f80ca42c97954c0ee44ba4336770d2a80",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
-      "comments": [],
+      "headRefOid": "f57ab0da776dc2d337da3eb952a75c83710abf5c",
+      "closedAt": "2022-01-11T23:27:38Z",
+      "mergedAt": "2022-01-11T23:27:38Z",
+      "mergedBy": "alexpell00",
+      "mergeCommit": {
+        "oid": "42a0ce1ff8f9ef695aca8ec490c1897edd9ede15"
+      },
+      "comments": [
+        {
+          "author": "matthewcbyington",
+          "authorAssociation": "COLLABORATOR",
+          "body": "LGTM too",
+          "createdAt": "2022-01-11T17:40:07Z",
+          "updatedAt": "2022-01-11T17:40:07Z"
+        }
+      ],
       "reviews": [
         {
           "id": "PRR_kwDOGL7YAs4ykvrw",
