@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2022-01-13T00:41:06.598747+00:00",
+  "timestamp": "2022-01-16T00:40:53.275001+00:00",
   "repo": "dimmyvi/secure-credential-transfer",
   "labels": [
     {
@@ -65,6 +65,78 @@
       "updatedAt": "2022-01-12T22:20:18Z",
       "closedAt": null,
       "comments": []
+    },
+    {
+      "number": 18,
+      "id": "I_kwDOGL7YAs5BrX_a",
+      "title": "Register new HTTP header in HTTP Field Name Registry",
+      "url": "https://github.com/dimmyvi/secure-credential-transfer/issues/18",
+      "state": "OPEN",
+      "author": "rdanyliw",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "Section 8.  It appears that this protocol is trying to register a new HTTP header field (Mailbox-Request-ID).  The IANA registry to do that in is https://www.iana.org/assignments/http-fields/http-fields.xhtml (per draft-ietf-httpbis-semantics).",
+      "createdAt": "2022-01-13T14:49:33Z",
+      "updatedAt": "2022-01-13T14:49:33Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 19,
+      "id": "I_kwDOGL7YAs5BrYMk",
+      "title": "Crypto agility",
+      "url": "https://github.com/dimmyvi/secure-credential-transfer/issues/19",
+      "state": "OPEN",
+      "author": "rdanyliw",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "Section 3.3.2.  This section hard-codes which crypto algorithm can be used.  Consider if you want to explicitly enable crypto agility by say creating a registry of permissible crypto algorithms.",
+      "createdAt": "2022-01-13T14:50:03Z",
+      "updatedAt": "2022-01-13T14:50:03Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 20,
+      "id": "I_kwDOGL7YAs5BrYdd",
+      "title": "Use reserved domains in examples",
+      "url": "https://github.com/dimmyvi/secure-credential-transfer/issues/20",
+      "state": "OPEN",
+      "author": "rdanyliw",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "Sections 3, 3.4.1, 6.1.6, 6.5.4, and 7.2 all provide examples using \u201crelayserver.com\u201d and \u201chotel.com\u201d.  IETF document should only use reserved domain (see RFC6761).  For example, s/relayserver.com/relayserver.example.com/",
+      "createdAt": "2022-01-13T14:50:36Z",
+      "updatedAt": "2022-01-13T14:50:36Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 21,
+      "id": "I_kwDOGL7YAs5BrYo4",
+      "title": "Use HTTPS in examples",
+      "url": "https://github.com/dimmyvi/secure-credential-transfer/issues/21",
+      "state": "CLOSED",
+      "author": "rdanyliw",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "Section 4 says that \u201cThe Relay server API endpoint MUST be accessed over HTTP using an https URI [RFC2818] and SHOULD use the default https port.\u201d  This makes sense.  However, the examples in Sections 3, 3.4, 3.4.1, and 7.2 use http://.",
+      "createdAt": "2022-01-13T14:51:02Z",
+      "updatedAt": "2022-01-13T18:19:10Z",
+      "closedAt": "2022-01-13T18:19:10Z",
+      "comments": [
+        {
+          "author": "dimmyvi",
+          "authorAssociation": "OWNER",
+          "body": "Addressing this in https://github.com/dimmyvi/secure-credential-transfer/pull/22",
+          "createdAt": "2022-01-13T18:19:10Z",
+          "updatedAt": "2022-01-13T18:19:10Z"
+        }
+      ]
     }
   ],
   "pulls": [
@@ -1985,6 +2057,63 @@
           "body": "Looks good to me ",
           "createdAt": "2022-01-11T00:36:11Z",
           "updatedAt": "2022-01-11T00:36:11Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "id": "PR_kwDOGL7YAs4w87rJ",
+      "title": "address IETF review - changing all URL links to https",
+      "url": "https://github.com/dimmyvi/secure-credential-transfer/pull/22",
+      "state": "OPEN",
+      "author": "dimmyvi",
+      "authorAssociation": "OWNER",
+      "assignees": [
+        "dimmyvi"
+      ],
+      "labels": [],
+      "body": "",
+      "createdAt": "2022-01-13T18:18:38Z",
+      "updatedAt": "2022-01-14T17:32:14Z",
+      "baseRepository": "dimmyvi/secure-credential-transfer",
+      "baseRefName": "main",
+      "baseRefOid": "42a0ce1ff8f9ef695aca8ec490c1897edd9ede15",
+      "headRepository": "dimmyvi/secure-credential-transfer",
+      "headRefName": "ietf-feedback",
+      "headRefOid": "a6925e1fc413540fb5ca0fd5842eb1260371629b",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [
+        {
+          "author": "matthewcbyington",
+          "authorAssociation": "COLLABORATOR",
+          "body": "@alexpell00 @dimmyvi I left one comment. example.com is a real website. Maybe we can choose a different example.",
+          "createdAt": "2022-01-14T17:31:13Z",
+          "updatedAt": "2022-01-14T17:31:13Z"
+        },
+        {
+          "author": "matthewcbyington",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Nevermind, going to the website it specifically states it is for illustrative purposes in documents so we should be good to go. My apologies. Looks good to me too @dimmyvi @alexpell00 ",
+          "createdAt": "2022-01-14T17:31:55Z",
+          "updatedAt": "2022-01-14T17:31:55Z"
+        }
+      ],
+      "reviews": [
+        {
+          "id": "PRR_kwDOGL7YAs4yzrcX",
+          "commit": {
+            "abbreviatedOid": "a6925e1"
+          },
+          "author": "alexpell00",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2022-01-14T01:32:50Z",
+          "updatedAt": "2022-01-14T01:32:50Z",
           "comments": []
         }
       ]
