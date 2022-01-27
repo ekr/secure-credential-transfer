@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2022-01-16T00:40:53.275001+00:00",
+  "timestamp": "2022-01-27T00:36:27.698269+00:00",
   "repo": "dimmyvi/secure-credential-transfer",
   "labels": [
     {
@@ -71,48 +71,72 @@
       "id": "I_kwDOGL7YAs5BrX_a",
       "title": "Register new HTTP header in HTTP Field Name Registry",
       "url": "https://github.com/dimmyvi/secure-credential-transfer/issues/18",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "rdanyliw",
       "authorAssociation": "NONE",
       "assignees": [],
       "labels": [],
       "body": "Section 8.  It appears that this protocol is trying to register a new HTTP header field (Mailbox-Request-ID).  The IANA registry to do that in is https://www.iana.org/assignments/http-fields/http-fields.xhtml (per draft-ietf-httpbis-semantics).",
       "createdAt": "2022-01-13T14:49:33Z",
-      "updatedAt": "2022-01-13T14:49:33Z",
-      "closedAt": null,
-      "comments": []
+      "updatedAt": "2022-01-25T19:05:52Z",
+      "closedAt": "2022-01-25T19:05:52Z",
+      "comments": [
+        {
+          "author": "dimmyvi",
+          "authorAssociation": "OWNER",
+          "body": "Will submit a request to register \"Mailbox-Request-ID\" header",
+          "createdAt": "2022-01-25T19:05:52Z",
+          "updatedAt": "2022-01-25T19:05:52Z"
+        }
+      ]
     },
     {
       "number": 19,
       "id": "I_kwDOGL7YAs5BrYMk",
       "title": "Crypto agility",
       "url": "https://github.com/dimmyvi/secure-credential-transfer/issues/19",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "rdanyliw",
       "authorAssociation": "NONE",
       "assignees": [],
       "labels": [],
       "body": "Section 3.3.2.  This section hard-codes which crypto algorithm can be used.  Consider if you want to explicitly enable crypto agility by say creating a registry of permissible crypto algorithms.",
       "createdAt": "2022-01-13T14:50:03Z",
-      "updatedAt": "2022-01-13T14:50:03Z",
-      "closedAt": null,
-      "comments": []
+      "updatedAt": "2022-01-25T19:22:51Z",
+      "closedAt": "2022-01-25T19:22:51Z",
+      "comments": [
+        {
+          "author": "dimmyvi",
+          "authorAssociation": "OWNER",
+          "body": "Thank you for the idea, we will discuss this internally ",
+          "createdAt": "2022-01-25T19:22:51Z",
+          "updatedAt": "2022-01-25T19:22:51Z"
+        }
+      ]
     },
     {
       "number": 20,
       "id": "I_kwDOGL7YAs5BrYdd",
       "title": "Use reserved domains in examples",
       "url": "https://github.com/dimmyvi/secure-credential-transfer/issues/20",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "rdanyliw",
       "authorAssociation": "NONE",
       "assignees": [],
       "labels": [],
       "body": "Sections 3, 3.4.1, 6.1.6, 6.5.4, and 7.2 all provide examples using \u201crelayserver.com\u201d and \u201chotel.com\u201d.  IETF document should only use reserved domain (see RFC6761).  For example, s/relayserver.com/relayserver.example.com/",
       "createdAt": "2022-01-13T14:50:36Z",
-      "updatedAt": "2022-01-13T14:50:36Z",
-      "closedAt": null,
-      "comments": []
+      "updatedAt": "2022-01-25T19:06:31Z",
+      "closedAt": "2022-01-25T19:06:31Z",
+      "comments": [
+        {
+          "author": "dimmyvi",
+          "authorAssociation": "OWNER",
+          "body": "Addressed in PR: https://github.com/dimmyvi/secure-credential-transfer/pull/22",
+          "createdAt": "2022-01-25T19:06:30Z",
+          "updatedAt": "2022-01-25T19:06:30Z"
+        }
+      ]
     },
     {
       "number": 21,
@@ -2066,7 +2090,7 @@
       "id": "PR_kwDOGL7YAs4w87rJ",
       "title": "address IETF review - changing all URL links to https",
       "url": "https://github.com/dimmyvi/secure-credential-transfer/pull/22",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "dimmyvi",
       "authorAssociation": "OWNER",
       "assignees": [
@@ -2075,17 +2099,19 @@
       "labels": [],
       "body": "",
       "createdAt": "2022-01-13T18:18:38Z",
-      "updatedAt": "2022-01-14T17:32:14Z",
+      "updatedAt": "2022-01-25T19:11:57Z",
       "baseRepository": "dimmyvi/secure-credential-transfer",
       "baseRefName": "main",
       "baseRefOid": "42a0ce1ff8f9ef695aca8ec490c1897edd9ede15",
       "headRepository": "dimmyvi/secure-credential-transfer",
       "headRefName": "ietf-feedback",
       "headRefOid": "a6925e1fc413540fb5ca0fd5842eb1260371629b",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2022-01-25T19:11:56Z",
+      "mergedAt": "2022-01-25T19:11:56Z",
+      "mergedBy": "dimmyvi",
+      "mergeCommit": {
+        "oid": "4f7c4e5c764f78221fb159c6ca23fa7d6f8dd431"
+      },
       "comments": [
         {
           "author": "matthewcbyington",
@@ -2114,6 +2140,66 @@
           "body": "",
           "createdAt": "2022-01-14T01:32:50Z",
           "updatedAt": "2022-01-14T01:32:50Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "id": "PR_kwDOGL7YAs4xlqiQ",
+      "title": "Update draft-secure-credential-transfer.md",
+      "url": "https://github.com/dimmyvi/secure-credential-transfer/pull/23",
+      "state": "OPEN",
+      "author": "dimmyvi",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "Addressing review comments",
+      "createdAt": "2022-01-25T23:31:52Z",
+      "updatedAt": "2022-01-26T21:12:26Z",
+      "baseRepository": "dimmyvi/secure-credential-transfer",
+      "baseRefName": "main",
+      "baseRefOid": "4f7c4e5c764f78221fb159c6ca23fa7d6f8dd431",
+      "headRepository": "dimmyvi/secure-credential-transfer",
+      "headRefName": "ietf-feedback",
+      "headRefOid": "d5e277f17de0d825f3a9fac1e8d32de7ab8ab533",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOGL7YAs4zcVh3",
+          "commit": {
+            "abbreviatedOid": "b5e4913"
+          },
+          "author": "alexpell00",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-01-26T02:39:40Z",
+          "updatedAt": "2022-01-26T02:39:40Z",
+          "comments": [
+            {
+              "originalPosition": 5,
+              "body": "```suggestion\r\nUnauthorized - calling device is not authorized to create a mailbox. E.g. a device presented an invalid deviceClaim or deviceAttestation.\r\n```\r\nWhat do you think about this?",
+              "createdAt": "2022-01-26T02:39:40Z",
+              "updatedAt": "2022-01-26T02:39:40Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOGL7YAs4zfnGg",
+          "commit": {
+            "abbreviatedOid": "b5e4913"
+          },
+          "author": "alexpell00",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "Lots of great fixes \ud83d\udc4d ",
+          "createdAt": "2022-01-26T18:13:28Z",
+          "updatedAt": "2022-01-26T18:13:28Z",
           "comments": []
         }
       ]
